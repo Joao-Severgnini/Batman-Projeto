@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  width: 60%;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+li {
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 19px;
+  transition: 0.5s;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+  color: #d21617;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+}
+
+#banner {
+  background-image: url("https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large");
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+main.actor-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cards-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 40px;
+  column-gap: 40px;
+}
+
+.card {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 20px 10px;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.banner-0 {
+  background-image: url("https://flxt.tmsimg.com/assets/221334_v9_ba.jpg");
+}
+.banner-1 {
+  background-image: url("https://static.wikia.nocookie.net/marvel_dc/images/2/2b/Robert_Pattinson_Mug_3.jpg/revision/latest?cb=20220228124352");
+}
+.banner-2 {
+  background-image: url("https://criticalhits.com.br/wp-content/uploads/2022/03/zoe-kravitz-mulher-gato.jpg");
+}
+.banner-3 {
+  background-image: url("https://i.redd.it/r96po045tlu81.png");
+}
+.banner-4 {
+  background-image: url("https://img.olhardigital.com.br/wp-content/uploads/2022/02/Charada-em-The-Batman.jpg");
+}
+.banner-5 {
+  background-image: url("https://www.hollywoodreporter.com/wp-content/uploads/2022/03/MCDBATM_WB065-H-2022.jpg");
+}
+.banner-6 {
+  background-image: url("https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/01/06/1797866254-the-batman-penguin-pinguim.jpg");
+}
+.banner-7 {
+  background-image: url("https://static.wikia.nocookie.net/the-batman-universe/images/a/a5/Bella_Real_-_Trailer_Image.png/revision/latest?cb=20211228043452");
+}
+.banner-8 {
+  background-image: url("https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/03/Andrew-Serki.jpg");
+}
+
+footer {
+  height: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  color: #fff;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .footer-navigation {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #banner {
+    background-position: 40%;
+  }
+
+  .cards-content {
+    margin-top: 150px;
+    grid-template-columns: 1fr;
+  }
+}
